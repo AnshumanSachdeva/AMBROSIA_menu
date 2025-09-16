@@ -116,12 +116,38 @@
       }
       footer {
         text-align: center;
-        font-size: 12px;
-        opacity: 0.5;
         padding: 30px;
+      }
+      .footer-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: var(--gold);
         letter-spacing: 1px;
       }
-      /* --------- DOWNLOAD BUTTON --------- */
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .social-link {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+      .social-link:hover {
+        transform: scale(1.1);
+        background: var(--gold);
+      }
+      .social-link img {
+        width: 24px;
+        height: 24px;
+      }
       #downloadBtn {
         position: fixed;
         right: 20px;
@@ -168,11 +194,9 @@
       }
     </style>
   </head>
-
   <body>
     <div class="menu-wrap" id="menu">
       <div class="logo">
-        
         <img src="/img/Yellow Green Modern Icons Juice Logo - Copy.png" alt="Ambrosia Logo">
       </div>
       <header>
@@ -184,54 +208,42 @@
         <div class="item">
           <div class="item-info">
             <h3>Orange Juice</h3>
-            <span
-              >Sun-ripened Valencia oranges, cold-pressed for a bright, golden burst of citrus vitality.</span
-            >
+            <span>Sun-ripened Valencia oranges, cold-pressed for a bright, golden burst of citrus vitality.</span>
           </div>
           <div class="price">$6.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Watermelon Juice</h3>
-            <span
-              >Chilled ruby watermelon, kissed with garden mint for ultimate summer refreshment.</span
-            >
+            <span>Chilled ruby watermelon, kissed with garden mint for ultimate summer refreshment.</span>
           </div>
           <div class="price">$6.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Pineapple Juice</h3>
-            <span
-              >Tropical golden pineapple, juiced to perfection with a sparkling tangy-sweet finish.</span
-            >
+            <span>Tropical golden pineapple, juiced to perfection with a sparkling tangy-sweet finish.</span>
           </div>
           <div class="price">$6.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Mix Juice</h3>
-            <span
-              >A harmonious medley of seasonal fruits, crafted into a vibrant, colorful elixir.</span
-            >
+            <span>A harmonious medley of seasonal fruits, crafted into a vibrant, colorful elixir.</span>
           </div>
           <div class="price">$6.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Lemonade</h3>
-            <span
-              >Freshly squeezed lemons, alpine spring water, and a hint of raw sugar — pure, zesty bliss.</span
-            >
+            <span>Freshly squeezed lemons, alpine spring water, and a hint of raw sugar — pure, zesty bliss.</span>
           </div>
           <div class="price">$6.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Carrot Juice</h3>
-            <span
-              >Organic carrots, cold-pressed for earthy sweetness and a nourishing golden-orange glow.</span
-            >
+            <span>Organic carrots, cold-pressed for earthy sweetness and a nourishing golden-orange glow.</span>
           </div>
           <div class="price">$6.99</div>
         </div>
@@ -241,91 +253,82 @@
         <div class="item">
           <div class="item-info">
             <h3>Strawberry Shake</h3>
-            <span
-              >Sun-kissed strawberries, blended into a creamy, dreamy indulgence.</span
-            >
+            <span>Sun-kissed strawberries, blended into a creamy, dreamy indulgence.</span>
           </div>
           <div class="price">$8.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Blueberry Shake</h3>
-            <span
-              >Wild blueberries swirled with silken milk, finished with a subtle antioxidant charm.</span
-            >
+            <span>Wild blueberries swirled with silken milk, finished with a subtle antioxidant charm.</span>
           </div>
           <div class="price">$8.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Mango Shake</h3>
-            <span
-              >Alphonso mangoes churned into a lush, tropical shake — smooth, rich, unforgettable.</span
-            >
+            <span>Alphonso mangoes churned into a lush, tropical shake — smooth, rich, unforgettable.</span>
           </div>
           <div class="price">$8.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Banana Shake</h3>
-            <span
-              >Ripe bananas, velvety milk, and a touch of honey for a timeless comfort classic.</span
-            >
+            <span>Ripe bananas, velvety milk, and a touch of honey for a timeless comfort classic.</span>
           </div>
           <div class="price">$8.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Imperial Dry Fruits Shake</h3>
-            <span
-              >A regal fusion of almonds, cashews, and pistachios blended into creamy decadence.</span
-            >
+            <span>A regal fusion of almonds, cashews, and pistachios blended into creamy decadence.</span>
           </div>
           <div class="price">$8.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Berry Blast Symphony</h3>
-            <span
-              >A vibrant medley of mixed berries, bursting with tangy sweetness in every sip.</span
-            >
+            <span>A vibrant medley of mixed berries, bursting with tangy sweetness in every sip.</span>
           </div>
           <div class="price">$8.99</div>
         </div>
         <div class="item">
           <div class="item-info">
             <h3>Lassi (Salted / Sweet)</h3>
-            <span
-              >Traditional churned yogurt elixir — choose between cooling salted elegance or sweetened delight.</span
-            >
+            <span>Traditional churned yogurt elixir — choose between cooling salted elegance or sweetened delight.</span>
           </div>
           <div class="price">$8.99</div>
         </div>
       </section>
-      <footer>1% of every elixir funds global clean-water projects</footer>
+      <footer>
+        <div class="footer-text">Know More About Us</div>
+        <div class="social-links">
+          <a href="https://www.tiktok.com/@ambrosia.juice?_t=ZS-8zlOGucnIWr&_r=1" class="social-link" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="TikTok">
+          </a>
+          <a href="https://www.instagram.com/ambrosia_juice7?igsh=MTV5ejc4Y2hjMHlsZQ%3D%3D&utm_source=qr" class="social-link" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+      </footer>
     </div>
 
     <button id="downloadBtn">DOWNLOAD<br />NOW</button>
 
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    
     <script>
-      
-      document.getElementById('downloadBtn').addEventListener('click', function() {
-        
+      document.getElementById('downloadBtn').addEventListener('click', function () {
         html2canvas(document.getElementById('menu'), {
-          scale: 2, 
+          scale: 2,
           backgroundColor: '#0f0f0f',
           useCORS: true,
           logging: false
-        }).then(function(canvas) {
-          
+        }).then(function (canvas) {
           const link = document.createElement('a');
           link.download = 'AMBROSIA-Menu.png';
           link.href = canvas.toDataURL('image/png');
           link.click();
-        }).catch(function(error) {
+        }).catch(function (error) {
           console.error('Error generating image:', error);
           alert('Unable to create image. Please try again.');
         });
